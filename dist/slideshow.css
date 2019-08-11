@@ -16,27 +16,33 @@ body {
 
 .che-slideshow {
   overflow: hidden;
-  position: relative; }
+  position: relative; 
+border-radius: 30px;}
 
 .che-slideshow-slide {
   width: 100%;
   top: 0;
   position: absolute; }
   .che-slideshow-slide .che-slideshow-caption {
-    bottom: 1em;
-    font-size: 0.8em;
-    color: #444444;
+    bottom: 3em;
+    font-size: 0.9em;
+    color: white;
     position: absolute;
     text-align: center;
-    width: 100%; }
+    width: 100%; 
+  }
+  
     @media (max-width: 800px) {
       .che-slideshow-slide .che-slideshow-caption {
-        font-size: 0.75em; } }
+        font-size: 0.75em; 
+      } }
     @media (max-width: 400px) {
       .che-slideshow-slide .che-slideshow-caption {
         font-size: 0.6em; } }
   .che-slideshow-slide img {
-    width: 100%; }
+    width: 100%; 
+    
+ }
   .che-slideshow-slide.inactive {
     display: none; }
   .che-slideshow-slide.position-left {

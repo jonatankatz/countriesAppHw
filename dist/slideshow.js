@@ -20,9 +20,12 @@ var CHESLIDESHOW = (function () {
 		setTargets(newMode);
 
 		// set indicators to next state
+		if(indicatorSelector.length > 1) {
+		
 		indicatorSelector[currentSlideIndex].classList.add('inactive-indicator');
 		indicatorSelector[newSlideIndex].classList.remove('inactive-indicator');
-
+		}
+		else{$(".slideshow-arrow").toggle()}
 		//set staging position
 		newSlide.style.left = mode === 'prev' ? '-100%' : '100%';
 		currentSlide.style.left = '0%';
