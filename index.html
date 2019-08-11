@@ -13,71 +13,70 @@
 </head>
 
 <body>
-    
+
     <div class="text-center pageTitle mb-4">
         <h1> Countries App </h1>
     </div>
 
-    <div class="mb-4" >
-        <div  class="d-flex justify-content-center mb-4">
+    <div class="mb-4">
+        <div class="d-flex justify-content-center mb-4">
             <form class="form-inline active-cyan-4">
-                <input id="findInput" class="form-control form-control-sm mr-3 text-center " type="text" placeholder="Find Country"
-                      aria-label="Search">
+                <input id="findInput" class="form-control form-control-sm mr-3 text-center " type="text" placeholder="Find Country" aria-label="Search">
                 <i class="fas fa-search" aria-hidden="true"></i>
             </form>
         </div>
         <div class="text-center mb-3">
-            <button id="findAll" class="btn btn-info mr-3" >Find All</button>
+            <button id="findAll" class="btn btn-info mr-3">Find All</button>
             <button id="findOne" class="btn btn-info mr-3">Find One</button>
             <button id="findCapital" class="btn btn-info mr-3">Capital city</button>
         </div>
         <div class="text-center">
-            <select id="CountriesDropD" class="custom-select mr-4" style="width:180px;"  >
+            <select id="CountriesDropD" class="custom-select mr-4" style="width:180px;">
                 <option selected>Countries</option>
-                
-              </select>
-              <select id="CurrenciesDropD" class="custom-select" style="width:180px;" >
+
+            </select>
+            <select id="CurrenciesDropD" class="custom-select" style="width:180px;">
                 <option selected>Currencies</option>
 
-              </select>
+            </select>
         </div>
     </div>
 
 
-    <div  class="che-slideshow" style="visibility:hidden" >
+    <div class="che-slideshow" style="visibility:hidden">
         <ol id="indicator" class="slideshow-indicator-container">
             <li class="slideshow-indicator">
             </li>
             <li class="slideshow-indicator inactive-indicator">
             </li>
-        
+
         </ol>
 
-        <div class="slideshow-left-control slideshow-control " >
+        <div class="slideshow-left-control slideshow-control ">
             <img src="images/left-arrow.png" class="slideshow-left-arrow slideshow-arrow">
         </div>
         <div class="slideshow-right-control slideshow-control">
             <img src="images/right-arrow.png" class="slideshow-right-arrow slideshow-arrow">
         </div>
-        <div id="imgSlider"  >
-                <div class="che-slideshow-slide" >
-                    <img src="images/alexandra-gorn-308385-unsplash.jpg">
-                    <div class="che-slideshow-caption">
-                        This is a caption for a photo.
-                    </div>
+        <div id="imgSlider">
+            <div class="che-slideshow-slide">
+                <img src="images/alexandra-gorn-308385-unsplash.jpg">
+                <div class="che-slideshow-caption">
+                    This is a caption for a photo.
                 </div>
-                <div class="che-slideshow-slide inactive" >
-                    <img src="images/napolitana.jpg">
-                    <div class="che-slideshow-caption">
-                        This is a caption for a photo.
-                    </div>
+            </div>
+            <div class="che-slideshow-slide inactive">
+                <img src="images/napolitana.jpg">
+                <div class="che-slideshow-caption">
+                    This is a caption for a photo.
                 </div>
-  
+            </div>
+
         </div>
     </div>
     </div>
 
-    
+
     <script src="jquery.js"></script>
     <script src="data.js"></script>
     <script src="dist/slideshow.js"></script>
@@ -86,4 +85,3 @@
 </body>
 
 </html>
-
