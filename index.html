@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/slideshow.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    
+    <div class="text-center pageTitle mb-4">
+        <h1> Countries App </h1>
+    </div>
+
+    <div class="mb-5" >
+        <div  class="d-flex justify-content-center mb-4">
+            <form class="form-inline active-cyan-4">
+                <input id="findInput" class="form-control form-control-sm mr-3 text-center " type="text" placeholder="Find Country"
+                      aria-label="Search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </form>
+        </div>
+        <div class="text-center">
+            <button id="findAll" class="btn btn-info mr-3" >Find All</button>
+            <button id="findOne" class="btn btn-info mr-3">Find One</button>
+            <button id="findCapital" class="btn btn-info mr-3">Capital city</button>
+        </div>
+    </div>
+
+    <div class="che-slideshow">
+        <ol id="indicator" class="slideshow-indicator-container">
+            <li class="slideshow-indicator">
+            </li>
+            <li class="slideshow-indicator inactive-indicator">
+            </li>
+            <li class="slideshow-indicator inactive-indicator">
+            </li>
+            <li class="slideshow-indicator inactive-indicator">
+            </li>
+        </ol>
+
+        <div class="slideshow-left-control slideshow-control">
+            <img src="images/left-arrow.png" class="slideshow-left-arrow slideshow-arrow">
+        </div>
+        <div class="slideshow-right-control slideshow-control">
+            <img src="images/right-arrow.png" class="slideshow-right-arrow slideshow-arrow">
+        </div>
+        <div id="imgSlider">
+                <div class="che-slideshow-slide">
+                    <img src="images/alexandra-gorn-308385-unsplash.jpg">
+                    <div class="che-slideshow-caption">
+                        This is a caption for a photo.
+                    </div>
+                </div>
+                <div class="che-slideshow-slide inactive">
+                    <img src="images/napolitana.jpg">
+                    <div class="che-slideshow-caption">
+                        This is a caption for a photo.
+                    </div>
+                </div>
+                <div class="che-slideshow-slide inactive">
+                    <img src="images/pexels-photo-1146760.jpeg">
+                    <div class="che-slideshow-caption">
+                        This is a caption for a photo.
+                    </div>
+                </div>
+                <div class="che-slideshow-slide inactive">
+                    <img src="images/pexels-photo-1146760.jpeg">
+                    <div class="che-slideshow-caption">
+                        This is a caption for a photo.
+                    </div>
+
+  
+        </div>
+    </div>
+    </div>
+    <script src="dist/slideshow.js"></script>
+    <script src="jquery.js"></script>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
+
+
+<!---
+    -->
