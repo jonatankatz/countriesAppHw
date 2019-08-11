@@ -112,8 +112,44 @@ findCapital.on("click",function(){
     document.querySelector('.che-slideshow').style.visibility = "visible"
 
         })
+const currenciesDd = function currenciesDd(countries){
+        $("#CountriesDropD").on("input",function(){
+            $("#CurrenciesDropD").html("")
+            let countryVal = JSON.stringify(document.querySelector("#CountriesDropD").value).toLowerCase()
+            let findCurrency = countries.filter((country) => {
+                let currentCountry = JSON.stringify(country.name).toLowerCase()
+                const {currencies} = country;
+                if (currentCountry === countryVal) return {countryName: currencies}
+        })
+          let currencies =  findCurrency.map((country,index) =>{
+                return country.currencies 
+            })
+            currencies.map((currency,index)=>{
+                currency.map((currentCurrency,index)=>{
+                    let currencyName = currentCurrency.name
+                    $("#CurrenciesDropD").append($(`<option></option>`).attr("value",currencyName).text(currencyName));
+                })
+            })
+        })
+}
+
+const fillCdd = function fillCdd(countries){
+    countries.map((country,index) => {
+        let countryName = country.name
+        $("#CountriesDropD").append($(`<option></option>`).attr("value",countryName).text(countryName)); 
 
 
+})
+}
 
+const countriesDd = function countriesDd(){
+const countriesForDd = countries.map((country ,index) => {
+    const {name,currencies} = country;
+    return{name,currencies}
+})
+fillCdd(countriesForDd)
+let currencies = currenciesDd(countriesForDd)
+}
+countriesDd()
 
 
